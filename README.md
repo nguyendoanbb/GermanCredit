@@ -5,3 +5,4 @@ A line i wrote on my local computer
 Third try to commit.
 Fourth try to commit
 This is a line from RStudio.
+Second commit from RStudio.
