@@ -8,16 +8,17 @@ rf.tune <- tuneRF(x=data.train[,-length(data.train)], y=data.train[,'class'],
 
 
 
+
 rf.model <- randomForest(class~., data=data.train, importance = TRUE,
                          mtry = rf.tune$mtry)
 plot(rf.model)
 legend('right', colnames(rf.model$err.rate), col=1:3, fill=1:3)
 
 rf.predict <- predict(rf.model, newdata = data.test)
-table(rf.predict, data.test[,'class'], dnn = c('Truth','Predict'))
-accuracy <- round((1-mean(rf.predict!=data.test$class))*100,2)
-cat('The accuracy by using Random Forest model is: ', accuracy, '%',
-    sep = '')
+rf.conf.matrix <- table(rf.predict, data.test[,'class'], dnn = c('Truth','Predict'))
+rf.accuracy <- round((1-mean(rf.predict!=data.test$class))*100,2)
+rf.bad.good <- rf.conf.matrix[3]
+
 
 
 
@@ -38,4 +39,12 @@ ggplot(rankImportance, aes(x = reorder(Variables, Importance) ,
   labs(x = 'Variables') +
   coord_flip() +
   theme_bw()
+
+
+
+
+#Conclusion
+cat('The accuracy by using Random Forest model is: ', rf.accuracy, '%',
+    sep = '')
+cat('We predict good risk when it is actually bad risk for',rf.bad.good,'observations')
 ########################################################################
