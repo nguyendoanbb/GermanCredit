@@ -1,9 +1,6 @@
 ############Predictive modeling
 ###Data set-up for training and testing
-set.seed(123)
-train <- sample(1:nrow(data), nrow(data)*2/3)
-data.train <- data[train,]
-data.test <- data[-train,]
+
 ########Logistic regression
 ##logistic model
 log1 <- glm(class~., family = 'binomial', data=data.train)
