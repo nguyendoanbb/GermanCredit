@@ -40,13 +40,13 @@ For window user:
 ## Running the analysis in R
 In order to run this analysis, please follow the direction below:
 1. Download and open files in this order:
--Credit_Dataset.csv (the main dataset)
--Packages_load.R (load required packages for the analysis)
--ImportData.R (import dataset into R)
--Data_Cleansing.R (clean and edit data)
--EDA.R (exploratory data analysis)
--SVM.R (support vector machine model)
--RandomForest.R (random forest model)
--Logistic.R (logistic regression model)
+2. Credit_Dataset.csv (the main dataset)
+3. Packages_load.R (load required packages for the analysis)
+4. ImportData.R (import dataset into R)
+5. Data_Cleansing.R (clean and edit data)
+6. EDA.R (exploratory data analysis)
+7. SVM.R (support vector machine model)
+8. RandomForest.R (random forest model)
+9. Logistic.R (logistic regression model)
 
 
