@@ -25,3 +25,28 @@ For mac user:
 9. Click on "Download RStudio Desktop."
 10. Click on the version recommended for your system, or the latest Mac version, save the .dmg file on your computer, double-click it to open, and then drag and drop it to your applications folder.
  
+For window user:
+1. Open an internet browser and go to www.r-project.org.
+2. Click the "download R" link in the middle of the page under "Getting Started."
+3. Select a CRAN location (a mirror site) and click the corresponding link.  
+4. Click on the "Download R for Windows" link at the top of the page.  
+5. Click on the "install R for the first time" link at the top of the page.
+6. Click "Download R for Windows" and save the executable file somewhere on your computer.  Run the .exe file and follow the installation instructions.  
+7. Now that R is installed, you need to download and install RStudio. 
+8. Go to www.rstudio.com and click on the "Download RStudio" button.
+9. Click on "Download RStudio Desktop."
+10. Click on the version recommended for your system, or the latest Windows version, and save the executable file.  Run the .exe file and follow the installation instructions.     
+
+## Running the analysis in R
+In order to run this analysis, please follow the direction below:
+1. Download and open files in this order:
+-Credit_Dataset.csv (the main dataset)
+-Packages_load.R (load required packages for the analysis)
+-ImportData.R (import dataset into R)
+-Data_Cleansing.R (clean and edit data)
+-EDA.R (exploratory data analysis)
+-SVM.R (support vector machine model)
+-RandomForest.R (random forest model)
+-Logistic.R (logistic regression model)
+
+
