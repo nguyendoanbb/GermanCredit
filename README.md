@@ -6,8 +6,8 @@ This project also explores the behavior of German borrowers. We will use visuali
 
 ## Software Version
  
-R Version 3.5.2 (2018-12-20)
-Packages installation (in Packages_load.R file)
+R Version 3.5.2 (2018-12-20).
+Packages installation (in Packages_load.R file).
  
 ## Installing
  
